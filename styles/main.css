@@ -1,129 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{
-    margin:0;
-    padding: 0;
-    font-family:'Montserrat', sans-serif ;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero {
-    height: 100vh;
-    background: center/ cover no-repeat url("../images/pexels-irina-iriser-1233415.jpg");
-    position: relative;
-    color: white;
-    
+  height: 100vh;
+  background: center/ cover no-repeat
+    url("../images/pexels-irina-iriser-1233415.jpg");
+  position: relative;
+  color: white;
 }
 
 nav {
-    position: absolute;
-    top: 1em;
-    left: 0;
-    background-color: #1a2456;
-    width: 98%;
-    /* margin: 1em; */
-    display: flex;
-    justify-content: space-around;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  background-color: #1a2456;
+  width: 98%;
+  /* margin: 1em; */
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo {
-    margin: auto;
+  margin: auto;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav li{
-    padding:20px;
+nav li {
+  padding: 20px;
 }
 
 .hero-title {
-    /* bottom:50%; */
-    font-size: 4em;
-    margin: auto;
-    position: absolute;
-    bottom: 50%;
+  /* bottom:50%; */
+  font-size: 4em;
+  margin: auto;
+  position: absolute;
+  bottom: 50%;
 }
 
-.grid-box-one {
-    display: grid;
-    grid-template-columns: minmax(40px, 30px) [left-line] 1fr [middle-lane] 1fr [right-line] minmax(40px, 30px);
-    grid-template-rows: 1fr [middle-horz] 1fr [bottom-line];
-    grid-gap: 30px;
-    height: 100vh;
-    margin: 30px 20px;
-}
-
-
-.box-one { 
-    background: center/ cover no-repeat url("../images/pexels-pixabay-460961.jpg");
-    grid-column: left-line/middle-lane;
-}
-
-.box-two{
-    background: center/ cover no-repeat url('../images/pexels-ylanite-koppens-2115609.jpg');
-    grid-column: middle-lane/right-line;
-}
-
-.box-three {
-    background: center/ cover no-repeat url("../images/pexels-oleksandr-pidvalnyi-345218.jpg");
-    grid-row: middle-horz/bottom-line;
-    grid-column: left-line/right-line;
-}
 
 .jumbotron {
-    background: center/ cover no-repeat url("../images/pexels-kristina-paukshtite-1427878.jpg");
-    /* background:fixed; */
-    height: 50vh;
+  background: center/ cover no-repeat
+    url("../images/pexels-kristina-paukshtite-1427878.jpg");
+  /* background:fixed; */
+  height: 50vh;
 }
 
 .grid-box-two {
-    padding: 20px 40px;
-    display: grid;
-    grid-template-columns: minmax(40px, 44px) [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] minmax(40px, 44px);
-    grid-template-rows: [top-row] 1fr [middle-row] 1fr [bottom-row];
-    grid-gap: 30px;
-    height: 100vh;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: minmax(40px, 44px) [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] minmax(
+      40px,
+      44px
+    );
+  grid-template-rows: [top-row] 1fr [middle-row] 1fr [bottom-row];
+  grid-gap: 30px;
+  height: 100vh;
 }
 
 .item-one {
-    background: center/ cover no-repeat url("../images/pexels-irina-iriser-1233415.jpg");
-    grid-column: first-line/second-line;
-
+  background: center/ cover no-repeat
+    url("../images/pexels-irina-iriser-1233415.jpg");
+  grid-column: first-line/second-line;
 }
 
-.item-two{
-    background: center/ cover no-repeat url("../images/pexels-egor-kamelev-2807404\ -\ Copy.jpg");
-    grid-column: second-line/third-line;
+.item-two {
+  background: center/ cover no-repeat
+    url("../images/pexels-egor-kamelev-2807404\ -\ Copy.jpg");
+  grid-column: second-line/third-line;
 }
 
 .item-three {
-    background: center/cover no-repeat url("../images/pexels-irina-iriser-1233415.jpg");
-    grid-column: third-line/fourth-line;
+  background: center/cover no-repeat
+    url("../images/pexels-irina-iriser-1233415.jpg");
+  grid-column: third-line/fourth-line;
 }
 
 .item-four {
-    background: center/ cover no-repeat url("../images/pexels-kristina-paukshtite-1427878.jpg");
-    grid-row: middle-row/bottom-row;
-    grid-column: first-line/second-line;
+  background: center/ cover no-repeat
+    url("../images/pexels-kristina-paukshtite-1427878.jpg");
+  grid-row: middle-row/bottom-row;
+  grid-column: first-line/second-line;
 }
 
 .item-five {
-    background: center/ cover no-repeat url('../images/pexels-oleksandr-pidvalnyi-345218.jpg');
-    grid-row: middle-row/bottom-row;
-    grid-column: second-line/third-line;
+  background: center/ cover no-repeat
+    url("../images/pexels-oleksandr-pidvalnyi-345218.jpg");
+  grid-row: middle-row/bottom-row;
+  grid-column: second-line/third-line;
 }
 
-footer {
-    background-color: #1a2456;
-    color: #ffd666;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
 
-footer ul {
-    list-style: none;
+
+@media (max-width: 375px) {
+  .hero {
+
+  }
+  nav {
+    /* display: none; */
+    height: 10%;
+  }
+
+  .logo {
+    text-align: center;
+
+  }
+
+  .hero ul {
+    display: none;
+  }
+
+  .hero-title{
+    font-size: 1.5em
+  }
+
+  .grid-box-one{
+    /* grid-template-columns: 1fr; */
+
+    grid-template-rows: 1fr 1fr [bottom-row] 1fr [bottom-end];
+  
+  }
+ 
+  .box-one {
+    grid-column: span 3;
+  }
+  .box-two{
+    grid-column: span 3;
+  }
+  .box-three {
+    grid-column: span 3;
+    grid-row: bottom-row/bottom-end;
+  }
+
+
 }
